@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,900&display=swap');
+body{
+    background-color:#aea2f0;
+    font-family: 'Rubik', sans-serif;
+}
+
+#gameHeading1,#gameHeading2,#gameHeading3,#gameHeading4,#boardBase{
+    display: flex;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 100px;
+}
+
+#gameHeading1{
+    z-index: 4;
+    color: #fc3f21;
+    top: 0%;
+    left: 50%;
+}
+
+#gameHeading2{
+    color: #0b43dc;
+    z-index: 3;
+    top: 1%;
+    left: 50.25%;
+}
+
+#gameHeading3{
+    color: #1bb476;
+    z-index: 2;
+    top: 2%;
+    left: 50.5%;
+}
+
+#gameHeading4{
+    color: #fed040;
+    z-index: 1;
+    top: 3%;
+    left: 50.75%;
+}
+
+#boardBase{
+    background-color: rgb(19, 19, 19);
+    height: 300px;
+    width: 300px;
+    top: 60%;
+    left: 50%;
+    border-radius: 50px;
+}
+
+#color1,#color2,#color3,#color4,#color1Original,#color2Original,#color3Original,#color4Original{
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+}
+
+#color1Original{
+    background-color: #fc3f21;
+    top: 30.5%;
+    left: 35.5%;
+}  
+
+#color2Original{
+    background-color: #fed040;
+    top: 30.5%;
+    left: 55.5%;
+}
+#color3Original{
+    background-color: #0b43dc;
+    top: 70.5%;
+    left: 55.5%;
+}
+#color4Original{
+    background-color: #1bb476;
+    top: 70.5%;
+    left: 35.5%;
+}
+
+
+#color1Base{
+    background-color: #fc3f21;
+    top: 40%;
+    left: 40%;
+} 
+
+#color2Base{
+    background-color: #fed040;
+    top: 40%;
+    left: 60%;
+}
+
+#color3Base{
+    background-color: #0b43dc;
+    top: 80%;
+    left: 60%;
+}
+
+#color4Base{
+    background-color: #1bb476;
+    top: 80%;
+    left: 40%;
+}
+
+#color1Base,#color2Base,#color3Base,#color4Base{
+    display: flex;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background-color: rgb(19, 19, 19);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+    }
+
+#score{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    color: #fed040;
+}
+
+#count{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+#reset{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    font-family: 'Rubik', sans-serif;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #fc3f21;;
+}
+
+#start{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    font-family: 'Rubik', sans-serif;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #1bb476;
+}
